@@ -1,0 +1,26 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "./settings";
+
+h1 {
+    color: gray;
+    @include breakpoint(tablet) {
+        color: green;
+    }
+    @include breakpoint(tablethorizontal) {
+        color: orange;
+    }
+    @include breakpoint(desktop) {
+        color: rebeccapurple;
+    }
+    @include breakpoint(desktopxl) {
+        color: yellow;
+        text-align: center;
+    }
+}
+   
